@@ -1,6 +1,11 @@
 import Styles from "./styles.module.scss";
 
-export default function TopBar() {
+/**
+ * This component renders TopBar for Home page
+ *
+ * @returns {JSX.Element}
+ */
+export default function TopBar(): JSX.Element {
   return (
     <div className={Styles.topBar}>
       <div className={Styles.details}>

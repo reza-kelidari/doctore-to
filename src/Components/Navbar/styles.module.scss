@@ -2,12 +2,13 @@
   display: flex;
   justify-content: center;
   position: fixed;
-  background: #ffffff22;
+  background: transparent;
   backdrop-filter: blur(1rem);
   color: #fff;
   width: 100%;
   padding: 1rem 2rem;
   z-index: 100;
+  transition: 0.3s ease-in-out all;
 
   &.scrolled {
     background: #ffffffaa;

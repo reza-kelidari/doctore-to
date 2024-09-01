@@ -3,10 +3,30 @@ import Logo from "../Logo";
 import Styles from "./styles.module.scss";
 import Menu from "../../Icons/Menu";
 
-export default function Navbar() {
+/**
+ * This comonent renders Navigation bar, contains Logo and
+ * some links, for `App.tsx`.
+ *
+ * @returns {JSX.Element}
+ */
+export default function Navbar(): JSX.Element {
+  /**
+   * This state declares that does user scrolled down
+   * in the site, or not
+   */
   const [scrolled, setScrolled] = useState<boolean>(false);
+
+  /**
+   * This state declares that does user clicked on
+   * hamburger menu, or not
+   */
   const [menuShown, setMenuShown] = useState<boolean>(false);
 
+  /**
+   * This effect adds a event listener to `window`, that listens
+   * to user's scroll, and if user scrolled more than 5px from
+   * top of screen, sets `scrolled` state to true
+   */
   useEffect(() => {
     window.addEventListener("scroll", () => setScrolled(scrollY > 5));
   }, []);
