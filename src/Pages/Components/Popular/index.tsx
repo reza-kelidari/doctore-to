@@ -23,7 +23,7 @@ export default function Popular(): JSX.Element {
 
         <div className={Styles.item}>
           <img src="/medical.png" alt="Medical" className={Styles.icon} />
-          <h3 className={Styles.title}>ارتوپد</h3>
+          <h3 className={Styles.title}>روانپزشکی</h3>
           <p className={Styles.desc}>نزدیک ترین دکتر به خودت رو پیدا کن</p>
           <a href="#" className={Styles.button}>
             <Arrow />
@@ -32,7 +32,7 @@ export default function Popular(): JSX.Element {
 
         <div className={Styles.item}>
           <img src="/medical.png" alt="Medical" className={Styles.icon} />
-          <h3 className={Styles.title}>ارتوپد</h3>
+          <h3 className={Styles.title}>ریه</h3>
           <p className={Styles.desc}>نزدیک ترین دکتر به خودت رو پیدا کن</p>
           <a href="#" className={Styles.button}>
             <Arrow />
@@ -41,7 +41,7 @@ export default function Popular(): JSX.Element {
 
         <div className={Styles.item}>
           <img src="/medical.png" alt="Medical" className={Styles.icon} />
-          <h3 className={Styles.title}>ارتوپد</h3>
+          <h3 className={Styles.title}>عفونی</h3>
           <p className={Styles.desc}>نزدیک ترین دکتر به خودت رو پیدا کن</p>
           <a href="#" className={Styles.button}>
             <Arrow />
