@@ -1,0 +1,14 @@
+@font-face {
+  font-family: NotoSans;
+  src: url("./Fonts/NotoSans.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px NotoSans;
+}
