@@ -10,5 +10,34 @@
 }
 
 body {
-  font-size: 20px NotoSans;
+  font: 20px NotoSans;
+  direction: rtl;
+
+  a {
+    color: unset;
+    text-decoration: none;
+  }
+
+  button {
+    background: #1e6063;
+    border: none;
+    padding: 0 1rem;
+    font: 20px NotoSans;
+    color: #fff;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+
+  input {
+    background: #1e606322;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    font: 20px NotoSans;
+    border-radius: 1rem;
+    text-align: center;
+
+    &:focus {
+      outline: none;
+    }
+  }
 }
