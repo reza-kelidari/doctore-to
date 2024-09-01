@@ -3,15 +3,17 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background: #1e6063;
   gap: 5rem;
   color: #fff;
+  margin-top: -5rem;
 
   .details {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    z-index: 1;
 
     .title {
       font-size: 1.75rem;
@@ -33,6 +35,7 @@
       flex-direction: column;
       gap: 2rem;
       width: fit-content;
+      z-index: 2;
 
       .title {
         font-size: 1.25rem;
@@ -69,7 +72,6 @@
     overflow: hidden;
 
     .details {
-      z-index: 1;
       align-items: center;
       gap: 1rem;
 
@@ -79,7 +81,6 @@
     }
 
     .banner {
-      
       position: absolute;
       min-width: 600px;
       width: 75%;

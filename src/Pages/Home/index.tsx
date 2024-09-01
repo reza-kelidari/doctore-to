@@ -1,3 +1,4 @@
+import Popular from "../Components/Popular";
 import TopBar from "../Components/TopBar";
 import Styles from "./styles.module.scss";
 
@@ -9,6 +10,7 @@ export default function Home(): JSX.Element {
   return (
     <div className={Styles.home}>
       <TopBar />
+      <Popular />
     </div>
   );
 }

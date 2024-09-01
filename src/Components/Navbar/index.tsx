@@ -8,10 +8,7 @@ export default function Navbar() {
   const [menuShown, setMenuShown] = useState<boolean>(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      setScrolled(scrollY > 5);
-      console.log(window.scrollY);
-    });
+    window.addEventListener("scroll", () => setScrolled(scrollY > 5));
   }, []);
 
   return (
