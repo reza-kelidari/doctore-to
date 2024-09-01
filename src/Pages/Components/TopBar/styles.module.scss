@@ -1,0 +1,90 @@
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: #1e6063;
+  gap: 5rem;
+  color: #fff;
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .title {
+      font-size: 1.75rem;
+      font-weight: 500;
+    }
+
+    .subTitle {
+      font-size: 1.25rem;
+      font-weight: 300;
+      opacity: 0.5;
+    }
+
+    .searchBar {
+      background: #fff;
+      color: #000;
+      padding: 2rem;
+      border-radius: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: fit-content;
+
+      .title {
+        font-size: 1.25rem;
+        line-height: 1rem;
+      }
+
+      .form {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        gap: 2rem;
+      }
+    }
+  }
+
+  .banner {
+    height: 30rem;
+    transition: 0.3s ease-in-out all;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .topBar {
+    .banner {
+      height: 20rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .topBar {
+    position: relative;
+    overflow: hidden;
+
+    .details {
+      z-index: 1;
+      align-items: center;
+      gap: 1rem;
+
+      .searchBar {
+        margin-top: 5rem;
+      }
+    }
+
+    .banner {
+      
+      position: absolute;
+      min-width: 600px;
+      width: 75%;
+      height: unset;
+      opacity: 0.25;
+    }
+  }
+}
