@@ -10,9 +10,9 @@ import { LogoParamsType } from "./types";
  */
 export default function Logo({ dark = false }: LogoParamsType): JSX.Element {
   return (
-    <div className={[Styles.logo, dark ? Styles.dark : ""].join(" ")}>
+    <a href="/" className={[Styles.logo, dark ? Styles.dark : ""].join(" ")}>
       <Health fill={dark ? "#1e6063" : undefined} />
       <span className={Styles.title}>دکتر تو</span>
-    </div>
+    </a>
   );
 }
